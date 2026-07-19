@@ -1,0 +1,139 @@
+import { SITE_CONFIG } from '../utils/config';
+import { MENU_CATEGORIES } from '../utils/menu';
+import { renderHeader, initHeader } from '../components/header';
+import { renderFooter } from '../components/footer';
+import { generateMenuSchema, generateRestaurantSchema } from '../components/schema';
+import { generateBreadcrumbSchema, renderBreadcrumbs } from '../utils/seo';
+import { initTracking } from '../components/tracking';
+import { initAnimations, initDragScroll } from '../utils/animations';
+import { openLightbox } from '../utils/lightbox';
+import { renderCategoryGrid } from '../utils/category';
+
+const config = SITE_CONFIG;
+
+function renderMenuSections(): string {
+  return MENU_CATEGORIES.map(cat => `
+    <div class="menu-section" id="${cat.id}" data-category="${cat.id}">
+      <h2>${cat.emoji ? `<span class="menu-emoji">${cat.emoji}</span>` : ''}${cat.label}</h2>
+      ${cat.note ? `<p class="menu-note">${cat.note}</p>` : ''}
+      ${renderCategoryGrid(cat.id)}
+    </div>
+  `).join('');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  if (!app) return;
+
+  app.innerHTML = `
+    ${renderHeader()}
+    <main id="main">
+      <section class="hero hero-page" aria-label="Our Menu" style="background: url('https://images.unsplash.com/photo-1493770348161-369560ae357d?w=1600&q=80') center/cover no-repeat;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Our Menu</h1>
+          <p>Specialty coffee, all-day breakfast, brunch, smoothies, pastries &amp; cocktails</p>
+          <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="margin-top: 1rem;">
+            Reserve a Table
+          </a>
+        </div>
+      </section>
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu.html' }])}
+
+      <nav class="category-nav" aria-label="Menu categories">
+        <div class="category-nav-inner">
+          ${MENU_CATEGORIES.map(cat => `
+            <button class="category-pill" data-target="${cat.id}" aria-label="Jump to ${cat.label}">
+              ${cat.emoji ? `${cat.emoji} ` : ''}${cat.label}
+            </button>
+          `).join('')}
+        </div>
+      </nav>
+
+      <div class="container" id="menu-content">
+        ${renderMenuSections()}
+
+        <!-- Reserve CTA -->
+        <div style="text-align:center; padding: var(--space-8) 0 var(--space-4); background: var(--color-cream); border-radius: var(--radius-md); margin: var(--space-6) 0;">
+          <h3 style="color: var(--color-primary); margin-bottom: var(--space-2);">Ready to Order?</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">Reserve your table online and we'll have it ready for you.</p>
+          <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.125rem; padding: 0.875rem 2.5rem;">
+            Reserve a Table
+          </a>
+          <p style="margin-top: var(--space-3); color: var(--color-text-muted); font-size: 0.875rem;">Or call us: <a href="tel:${config.locations[0].phone}" style="color: var(--color-primary); font-weight: 700;">${config.locations[0].phoneFormatted}</a></p>
+        </div>
+      </div>
+    </main>
+    ${renderFooter()}
+
+    <script type="application/ld+json">${generateMenuSchema()}</script>
+    <script type="application/ld+json">${generateRestaurantSchema()}</script>
+    <script type="application/ld+json">${generateBreadcrumbSchema([
+      { name: 'Home', url: '/' },
+      { name: 'Menu', url: '/menu.html' },
+    ])}</script>
+  `;
+
+  initHeader();
+  initTracking();
+  initAnimations();
+  initDragScroll('.category-nav');
+  initMenuInteractions();
+  initMenuImageLightbox();
+});
+
+function initMenuImageLightbox(): void {
+  const cards = document.querySelectorAll<HTMLElement>('.mi-card--has-img');
+  cards.forEach(card => {
+    const imgDiv = card.querySelector('.mi-card-img') as HTMLElement | null;
+    if (!imgDiv) return;
+    imgDiv.style.cursor = 'pointer';
+    imgDiv.addEventListener('click', () => {
+      const src = imgDiv.getAttribute('data-src');
+      if (src) openLightbox([src], 0);
+    });
+  });
+}
+
+function initMenuInteractions(): void {
+  document.querySelectorAll('.category-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const targetId = pill.getAttribute('data-target');
+      if (targetId) {
+        const section = document.getElementById(targetId);
+        section?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  const sections = document.querySelectorAll('.menu-section');
+  const pills = document.querySelectorAll('.category-pill');
+
+  // Resolve the total sticky header height to a concrete pixel value.
+  // (The --total-header-height custom property is a calc() expression,
+  // which is not a valid rootMargin, so measure the elements instead.)
+  const topBarEl = document.querySelector('.top-bar') as HTMLElement | null;
+  const headerEl = document.querySelector('.site-header') as HTMLElement | null;
+  const headerOffset = (topBarEl?.offsetHeight || 44) + (headerEl?.offsetHeight || 72);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('data-category');
+          pills.forEach(p => {
+            p.classList.toggle('active', p.getAttribute('data-target') === id);
+          });
+          const activePill = document.querySelector(`.category-pill[data-target="${id}"]`);
+          activePill?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+      rootMargin: `-${headerOffset}px 0px -60% 0px`,
+    }
+  );
+
+  sections.forEach(s => observer.observe(s));
+}

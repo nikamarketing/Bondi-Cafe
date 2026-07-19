@@ -1,0 +1,30 @@
+# Aaron's Koshe
+
+> Aaron's Koshe is a cafe & restaurant at 94 Campbell Parade, Bondi Beach NSW 2026, Australia — directly opposite Bondi Beach in Sydney. It serves specialty single-origin coffee, all-day breakfast, fresh brunch and lunch plates, smoothies and juices, house-baked pastries, and evening cocktails at the bar.
+
+Key facts:
+- Cuisine: Cafe (specialty coffee, all-day breakfast, brunch & lunch, pastries), cocktail bar
+- Address: 94 Campbell Parade, Bondi Beach NSW 2026, Australia
+- Phone: +61 2 9365 1234
+- Hours: Open daily 5:00 AM – 11:00 PM · Kitchen until 3:00 PM · Bar from 5:00 PM
+- Price range: $$ (coffee from A$4.50, breakfast from A$16, brunch from A$22)
+- Reservations: online via Quandoo or by phone; walk-ins welcome
+- Delivery: Uber Eats, DoorDash, Hungry Panda
+- Signature items: Flat White on single-origin espresso, Big Bondi Breakfast, Smashed Avo & Feta, Acai Bowl, 18-hour Cold Brew, Espresso Martini
+- Dietary: vegan, vegetarian and gluten-free options across the menu; oat, almond, soy and macadamia milk available
+
+## Pages
+
+- [Home](https://aaronskoshe.com.au/): Overview of the cafe, signature dishes and reservations
+- [Full Menu](https://aaronskoshe.com.au/menu.html): Complete menu with prices — coffee, breakfast, brunch, smoothies, pastries, cocktails
+- [Specialty Coffee](https://aaronskoshe.com.au/coffee.html): Coffee menu, brewing method and FAQs
+- [Breakfast & Brunch](https://aaronskoshe.com.au/breakfast.html): All-day breakfast and brunch menus with FAQs
+- [Drinks & Cocktails](https://aaronskoshe.com.au/drinks.html): Smoothies, juices, cocktails and bar FAQs
+- [About](https://aaronskoshe.com.au/about.html): The story and philosophy of Aaron's Koshe
+- [Blog](https://aaronskoshe.com.au/blog.html): Guides to specialty coffee, breakfast and cafe culture in Bondi
+- [Contact & Reservations](https://aaronskoshe.com.au/contact.html): Booking, opening hours, map and contact details
+
+## Optional
+
+- [Gallery](https://aaronskoshe.com.au/gallery.html): Photos of dishes, drinks and the cafe
+- [Sitemap](https://aaronskoshe.com.au/sitemap.xml): XML sitemap of all pages
