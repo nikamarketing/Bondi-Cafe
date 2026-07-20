@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import MobileFooter from '@/components/MobileFooter';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.aaronskoshe.com.au'),
   title: {
     default: 'Bondi Cafe | Specialty Coffee & Fresh Food · Bondi Beach',
     template: '%s | Bondi Cafe',

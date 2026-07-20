@@ -57,7 +57,7 @@ const schemaOrg = {
     postalCode: '2026',
     addressCountry: 'AU',
   },
-  url: 'https://bondicafe.com.au',
+  url: 'https://www.aaronskoshe.com.au',
   openingHours: ['Mo-Su 05:00-23:00'],
 };
 
