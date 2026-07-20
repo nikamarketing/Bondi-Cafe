@@ -53,7 +53,7 @@ export const SITE_CONFIG = {
   ],
 
   // ── RESERVATION ────────────────────────────────────────────
-  reservationUrl: "https://www.quandoo.com.au/en/checkout-widget/widget?merchantId=109686&primaryColor=15588c&theme=brand&aid=146&utm_source=quandoo-partner&utm_medium=widget-link",
+  reservationUrl: "https://www.quandoo.com.au/en/checkout-widget/widget?merchantId=109684&primaryColor=15588c&theme=brand&aid=146&utm_source=quandoo-partner&utm_medium=widget-link",
 
   // ── DELIVERY PLATFORMS ─────────────────────────────────────
   delivery: {

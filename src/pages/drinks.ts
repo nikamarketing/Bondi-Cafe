@@ -80,15 +80,15 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </section>
 
-      <!-- Cocktails / Bar -->
+      <!-- Fresh Juices -->
       <section class="section" aria-labelledby="bar-list-heading">
         <div class="container">
           <div class="section-header animate-fade-up">
-            <h2 id="bar-list-heading">Cocktails &amp; Bar</h2>
+            <h2 id="bar-list-heading">Fresh Juices</h2>
             <div class="section-divider"></div>
-            <p>Served daily from 5:00 PM</p>
+            <p>Squeezed fresh to order</p>
           </div>
-          <div class="animate-fade-up">${renderCategoryGrid('bar')}</div>
+          <div class="animate-fade-up">${renderCategoryGrid('juices')}</div>
         </div>
       </section>
 
