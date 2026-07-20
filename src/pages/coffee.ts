@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="margin-top: 1rem;">Reserve a Table</a>
         </div>
       </section>
-      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu.html' }, { name: 'Specialty Coffee', url: '/coffee.html' }])}
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu' }, { name: 'Specialty Coffee', url: '/coffee' }])}
 
       <!-- SEO intro -->
       <section class="section" aria-labelledby="coffee-intro-heading">
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="section-divider" style="margin: 1rem 0;"></div>
               <p>At Aaron's Koshe, coffee is a craft. Our beans are single origin and ethically sourced, roasted for us in small batches and cupped by our baristas every week. The grinders are re-dialled each morning, because a great shot yesterday isn't good enough for today.</p>
               <p>From a textbook flat white to slow-steeped cold brew and ceremonial-grade matcha, every drink is made to order from 5 AM daily — and it pairs dangerously well with a warm almond croissant, straight from the morning bake.</p>
-              <a href="/menu.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Menu</a>
+              <a href="/menu" class="btn btn-primary" style="margin-top: 1rem;">View Full Menu</a>
             </div>
             <div style="min-height: 22rem; border-radius: var(--radius-md); overflow: hidden;">
               <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&q=80" alt="Barista pouring specialty coffee at Aaron's Koshe" loading="lazy" decoding="async" width="800" height="600" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
@@ -144,15 +144,15 @@ document.addEventListener('DOMContentLoaded', () => {
     </main>
     ${renderFooter()}
 
-    <script type="application/ld+json">${generateCategoryPageSchema({ name: 'Specialty Coffee in Bondi Beach', description: 'Single-origin specialty coffee, cold brew, matcha and house-baked pastries at Aaron\'s Koshe, 94 Campbell Parade, Bondi Beach.', path: '/coffee.html' })}</script>
+    <script type="application/ld+json">${generateCategoryPageSchema({ name: 'Specialty Coffee in Bondi Beach', description: 'Single-origin specialty coffee, cold brew, matcha and house-baked pastries at Aaron\'s Koshe, 94 Campbell Parade, Bondi Beach.', path: '/coffee' })}</script>
     <script type="application/ld+json">${generateMenuSectionSchema('coffee')}</script>
     <script type="application/ld+json">${generateMenuSectionSchema('pastries')}</script>
     <script type="application/ld+json">${generateRestaurantSchema()}</script>
     <script type="application/ld+json">${generateFAQSchema(faqs)}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Menu', url: '/menu.html' },
-      { name: 'Specialty Coffee', url: '/coffee.html' },
+      { name: 'Menu', url: '/menu' },
+      { name: 'Specialty Coffee', url: '/coffee' },
     ])}</script>
   `;
 

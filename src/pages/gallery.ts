@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Glimpses of our coffee, kitchen and beachside atmosphere</p>
         </div>
       </section>
-      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Gallery', url: '/gallery.html' }])}
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Gallery', url: '/gallery' }])}
 
       <section class="section" aria-labelledby="gallery-heading">
         <div class="container">
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <script type="application/ld+json">${generateImageGallerySchema()}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Gallery', url: '/gallery.html' },
+      { name: 'Gallery', url: '/gallery' },
     ])}</script>
   `;
 

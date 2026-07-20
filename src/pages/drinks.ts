@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="margin-top: 1rem;">Reserve a Table</a>
         </div>
       </section>
-      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu.html' }, { name: 'Drinks & Juices', url: '/drinks.html' }])}
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu' }, { name: 'Drinks & Juices', url: '/drinks' }])}
 
       <!-- SEO intro -->
       <section class="section" aria-labelledby="drinks-intro-heading">
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="section-divider" style="margin: 1rem 0;"></div>
               <p>The drinks list at Aaron's Koshe follows the Bondi day. Mornings belong to fresh smoothies and cold-pressed juices — mango, passionfruit, spinach, coconut — blended to order while the beach fills up.</p>
               <p>As the afternoon rolls in, iced coffees, milkshakes and thickshakes take over, every glass built on the same fresh ingredients as the morning menu and poured right through to close at 11 PM.</p>
-              <a href="/menu.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Menu</a>
+              <a href="/menu" class="btn btn-primary" style="margin-top: 1rem;">View Full Menu</a>
             </div>
             <div style="min-height: 22rem; border-radius: var(--radius-md); overflow: hidden;">
               <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=1200&q=80" alt="Fresh juices at Aaron's Koshe" loading="lazy" decoding="async" width="800" height="600" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
@@ -144,15 +144,15 @@ document.addEventListener('DOMContentLoaded', () => {
     </main>
     ${renderFooter()}
 
-    <script type="application/ld+json">${generateCategoryPageSchema({ name: 'Drinks & Juices in Bondi Beach', description: 'Fresh smoothies, juices, milkshakes and iced coffee at Aaron\'s Koshe, 94 Campbell Parade, Bondi Beach — served all day.', path: '/drinks.html' })}</script>
+    <script type="application/ld+json">${generateCategoryPageSchema({ name: 'Drinks & Juices in Bondi Beach', description: 'Fresh smoothies, juices, milkshakes and iced coffee at Aaron\'s Koshe, 94 Campbell Parade, Bondi Beach — served all day.', path: '/drinks' })}</script>
     <script type="application/ld+json">${generateMenuSectionSchema('smoothies')}</script>
     <script type="application/ld+json">${generateMenuSectionSchema('juices')}</script>
     <script type="application/ld+json">${generateRestaurantSchema()}</script>
     <script type="application/ld+json">${generateFAQSchema(faqs)}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Menu', url: '/menu.html' },
-      { name: 'Drinks & Juices', url: '/drinks.html' },
+      { name: 'Menu', url: '/menu' },
+      { name: 'Drinks & Juices', url: '/drinks' },
     ])}</script>
   `;
 

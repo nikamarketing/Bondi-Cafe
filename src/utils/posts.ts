@@ -33,7 +33,7 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt: 'Freshly roasted single-origin coffee beans',
     keywords: ['specialty coffee guide', 'single origin coffee Bondi', 'best flat white Sydney', 'cold brew coffee'],
     contentHtml: `
-      <p>"Specialty coffee" gets thrown around so much it can feel like marketing. It isn't — it's a defined standard, scored by graders, and it changes everything about what lands in your cup. At <a href="/coffee.html">Aaron's Koshe</a>, every bean we buy meets it. Here's what that actually means, and how to taste the difference a few steps from the sand at Bondi Beach.</p>
+      <p>"Specialty coffee" gets thrown around so much it can feel like marketing. It isn't — it's a defined standard, scored by graders, and it changes everything about what lands in your cup. At <a href="/coffee">Aaron's Koshe</a>, every bean we buy meets it. Here's what that actually means, and how to taste the difference a few steps from the sand at Bondi Beach.</p>
 
       <h2>It starts at origin — a single one</h2>
       <p>Most supermarket coffee is a blend of beans from many countries, roasted dark to hide inconsistency. Specialty coffee flips that: beans from a single farm or region, picked ripe, processed carefully and scored 80+ points by certified graders. A single origin tastes like a place — an Ethiopian lot might sing with blueberry and jasmine, a Colombian with caramel and red apple. Our house espresso rotates through the seasons, so the hopper always holds something at its peak.</p>
@@ -53,7 +53,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
 
       <h2>Taste it for yourself in Bondi</h2>
-      <p>Theory only gets you so far. Visit us at 94 Campbell Parade from 5 AM any day, watch the bar at work, and order whatever the barista is excited about — or browse the full <a href="/coffee.html">specialty coffee menu</a> first. See you at sunrise.</p>
+      <p>Theory only gets you so far. Visit us at 94 Campbell Parade from 5 AM any day, watch the bar at work, and order whatever the barista is excited about — or browse the full <a href="/coffee">specialty coffee menu</a> first. See you at sunrise.</p>
     `,
   },
   {
@@ -69,13 +69,13 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt: 'Full cooked breakfast with eggs, bacon and sourdough',
     keywords: ['breakfast Bondi Beach', 'all day breakfast Sydney', 'best brunch Bondi', 'smashed avo Bondi'],
     contentHtml: `
-      <p>Bondi takes breakfast more seriously than almost anywhere on earth. It's the meal the whole suburb is built around — before work, after a swim, halfway through a hangover. Here's how the locals do it, from the team at <a href="/breakfast.html">Aaron's Koshe</a> on Campbell Parade.</p>
+      <p>Bondi takes breakfast more seriously than almost anywhere on earth. It's the meal the whole suburb is built around — before work, after a swim, halfway through a hangover. Here's how the locals do it, from the team at <a href="/breakfast">Aaron's Koshe</a> on Campbell Parade.</p>
 
       <h2>The dawn shift: 5–7 AM</h2>
       <p>Bondi mornings start in the dark. The ocean swimmers hit the water at first light, the surfers check the banks at Icebergs' end, and the run clubs loop the coastal path. This crowd needs coffee <em>early</em> — which is exactly why we open at 5 AM daily. A flat white and a warm banana bread on the way to the sand is the most Bondi breakfast there is.</p>
 
       <h2>The classic window: 7–11 AM</h2>
-      <p>This is peak Bondi: smashed avo with Persian feta and dukkah, eggs benedict with house-cured salmon, or the Big Bondi Breakfast if the morning swim earned it. Order a fresh juice or a <a href="/drinks.html">smoothie</a> on the side — the Bondi Sunrise (mango, passionfruit, orange, pineapple) tastes like the beach looks at 7 AM.</p>
+      <p>This is peak Bondi: smashed avo with Persian feta and dukkah, eggs benedict with house-cured salmon, or the Big Bondi Breakfast if the morning swim earned it. Order a fresh juice or a <a href="/drinks">smoothie</a> on the side — the Bondi Sunrise (mango, passionfruit, orange, pineapple) tastes like the beach looks at 7 AM.</p>
 
       <h2>The sleep-in service: 11 AM – 3 PM</h2>
       <p>Here's the thing about "all-day breakfast": most cafes quietly stop at 11:30. We don't. The full breakfast menu runs until the kitchen closes at 3 PM, alongside the brunch and lunch list — barramundi bowls, fish tacos, the Bondi Beef Burger. Eggs at 2 PM isn't a compromise; it's a lifestyle.</p>
@@ -85,11 +85,11 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Swim first.</strong> Everything tastes better with salt still on your skin.</li>
         <li><strong>Sourdough always.</strong> If the bread isn't proper, the breakfast isn't either. Ours arrives from a local bakery at dawn.</li>
         <li><strong>Share the sweet thing.</strong> One French toast for the table, extra forks. No exceptions.</li>
-        <li><strong>Book the weekend.</strong> Saturday and Sunday 9 AM–midday are the rush — <a href="/contact.html">reserve online</a> to skip the wait.</li>
+        <li><strong>Book the weekend.</strong> Saturday and Sunday 9 AM–midday are the rush — <a href="/contact">reserve online</a> to skip the wait.</li>
       </ul>
 
       <h2>Come hungry</h2>
-      <p>Find us at 94 Campbell Parade, directly opposite the beach, kitchen open 5 AM – 3 PM every day. Browse the full <a href="/breakfast.html">breakfast &amp; brunch menu</a> and come do mornings properly.</p>
+      <p>Find us at 94 Campbell Parade, directly opposite the beach, kitchen open 5 AM – 3 PM every day. Browse the full <a href="/breakfast">breakfast &amp; brunch menu</a> and come do mornings properly.</p>
     `,
   },
   {
@@ -111,13 +111,13 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Between 5 and 6:30 AM, Bondi belongs to the locals. The light comes up gold over the Pacific, the first swimmers cross the bay, and the espresso machine hisses its first shots of the day. Take a window seat, order a flat white and watch the beach wake up — it's the best free show in Sydney, and you'll have it almost to yourself.</p>
 
       <h2>Mid-morning: the social hours</h2>
-      <p>By 9 AM the room hums — prams and paddleboards, laptops and long blacks, half of Sydney's eastern suburbs catching up over <a href="/breakfast.html">smashed avo</a>. Bondi cafe etiquette is simple: dogs get water bowls, wetsuits get towels on chairs, and nobody rushes you. Order a second coffee. Everyone does.</p>
+      <p>By 9 AM the room hums — prams and paddleboards, laptops and long blacks, half of Sydney's eastern suburbs catching up over <a href="/breakfast">smashed avo</a>. Bondi cafe etiquette is simple: dogs get water bowls, wetsuits get towels on chairs, and nobody rushes you. Order a second coffee. Everyone does.</p>
 
       <h2>Afternoon: the long lunch drift</h2>
       <p>As the kitchen winds toward its 3 PM close, lunch stretches out — fish tacos and kombucha, a barramundi bowl, maybe a slice of acai cheesecake because the ocean air demands it. This is the hour for watching the sails drift across the horizon and deciding the emails can wait.</p>
 
       <h2>Golden hour: the sweetest shift</h2>
-      <p>As the afternoon fades, the same single-origin espresso that made your morning flat white goes into an <a href="/drinks.html">iced latte</a>, and the blender switches to milkshakes and thickshakes. The east-facing beach means the light turns pink and gold behind Campbell Parade — order a dessert, share some pastries left from the morning bake, and stay until the streetlights take over. We pour until 11 PM.</p>
+      <p>As the afternoon fades, the same single-origin espresso that made your morning flat white goes into an <a href="/drinks">iced latte</a>, and the blender switches to milkshakes and thickshakes. The east-facing beach means the light turns pink and gold behind Campbell Parade — order a dessert, share some pastries left from the morning bake, and stay until the streetlights take over. We pour until 11 PM.</p>
 
       <h2>Make it yours</h2>
       <ul>
@@ -125,7 +125,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Best order:</strong> flat white before 10, cold brew after, a thickshake after 5.</li>
         <li><strong>Best day:</strong> any day — we're open 5 AM to 11 PM, every single one.</li>
       </ul>
-      <p>Aaron's Koshe is at 94 Campbell Parade, directly opposite the beach. <a href="/contact.html">Book a table</a> or just follow the smell of coffee. See you by the water.</p>
+      <p>Aaron's Koshe is at 94 Campbell Parade, directly opposite the beach. <a href="/contact">Book a table</a> or just follow the smell of coffee. See you by the water.</p>
     `,
   },
 ];

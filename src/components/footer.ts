@@ -12,14 +12,14 @@ export function renderFooter(): string {
       ${ICONS.home}
       <span>Home</span>
     </a>
-    <a href="/menu.html" class="mobile-nav-item">
+    <a href="/menu" class="mobile-nav-item">
       ${ICONS.menu}
       <span>Menu</span>
     </a>
     <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="mobile-nav-item mobile-nav-call" aria-label="Reserve a table">
       ${ICONS.calendar}
     </a>
-    <a href="/contact.html" class="mobile-nav-item">
+    <a href="/contact" class="mobile-nav-item">
       ${ICONS.mapPin}
       <span>Contact</span>
     </a>
@@ -42,14 +42,14 @@ export function renderFooter(): string {
         <div class="footer-col">
           <h4>Explore</h4>
           <a href="/">Home</a>
-          <a href="/about.html">About Us</a>
-          <a href="/menu.html">Full Menu</a>
-          <a href="/coffee.html">Specialty Coffee</a>
-          <a href="/breakfast.html">Breakfast &amp; Brunch</a>
-          <a href="/drinks.html">Drinks &amp; Juices</a>
-          <a href="/gallery.html">Gallery</a>
-          <a href="/blog.html">Blog</a>
-          <a href="/contact.html">Contact</a>
+          <a href="/about">About Us</a>
+          <a href="/menu">Full Menu</a>
+          <a href="/coffee">Specialty Coffee</a>
+          <a href="/breakfast">Breakfast &amp; Brunch</a>
+          <a href="/drinks">Drinks &amp; Juices</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
           <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer">Reserve a Table</a>
         </div>
         <div class="footer-col">

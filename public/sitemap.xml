@@ -6,59 +6,59 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/about.html</loc>
+    <loc>https://aaronskoshe.com.au/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/menu.html</loc>
+    <loc>https://aaronskoshe.com.au/menu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/coffee.html</loc>
+    <loc>https://aaronskoshe.com.au/coffee</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/breakfast.html</loc>
+    <loc>https://aaronskoshe.com.au/breakfast</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/drinks.html</loc>
+    <loc>https://aaronskoshe.com.au/drinks</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/gallery.html</loc>
+    <loc>https://aaronskoshe.com.au/gallery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/contact.html</loc>
+    <loc>https://aaronskoshe.com.au/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/blog.html</loc>
+    <loc>https://aaronskoshe.com.au/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/specialty-coffee-guide.html</loc>
+    <loc>https://aaronskoshe.com.au/specialty-coffee-guide</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/bondi-breakfast-guide.html</loc>
+    <loc>https://aaronskoshe.com.au/bondi-breakfast-guide</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://aaronskoshe.com.au/cafe-culture-bondi-beach.html</loc>
+    <loc>https://aaronskoshe.com.au/cafe-culture-bondi-beach</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

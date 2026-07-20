@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>A passion for great coffee and honest food in the heart of Bondi Beach</p>
         </div>
       </section>
-      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'About Us', url: '/about.html' }])}
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'About Us', url: '/about' }])}
 
       <!-- Story -->
       <section class="section" aria-labelledby="story-heading">
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="section-divider" style="margin: 1rem 0;"></div>
               <p>Our brew bar runs single-origin espresso, 18-hour cold brew and ceremonial-grade matcha side by side. Beans rotate with the seasons, and our baristas re-dial the grinders every morning — because humidity, age and altitude all change the shot, and we chase the sweet spot daily.</p>
               <p>Prefer it slow? Ask for the day's filter. Dairy-free? Oat, almond, soy and macadamia are always on. However you take it, it's poured with the same care.</p>
-              <a href="/coffee.html" class="btn btn-primary" style="margin-top: 1rem;">Explore Our Coffee</a>
+              <a href="/coffee" class="btn btn-primary" style="margin-top: 1rem;">Explore Our Coffee</a>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <script type="application/ld+json">${generateOrganizationSchema()}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'About', url: '/about.html' },
+      { name: 'About', url: '/about' },
     ])}</script>
   `;
 
