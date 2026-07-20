@@ -96,18 +96,9 @@ function initMenuImageLightbox(): void {
 }
 
 function initMenuInteractions(): void {
-  document.querySelectorAll('.category-pill').forEach(pill => {
-    pill.addEventListener('click', () => {
-      const targetId = pill.getAttribute('data-target');
-      if (targetId) {
-        const section = document.getElementById(targetId);
-        section?.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-
+  const nav = document.querySelector<HTMLElement>('.category-nav');
+  const pills = document.querySelectorAll<HTMLElement>('.category-pill');
   const sections = document.querySelectorAll('.menu-section');
-  const pills = document.querySelectorAll('.category-pill');
 
   // Resolve the total sticky header height to a concrete pixel value.
   // (The --total-header-height custom property is a calc() expression,
@@ -116,16 +107,51 @@ function initMenuInteractions(): void {
   const headerEl = document.querySelector('.site-header') as HTMLElement | null;
   const headerOffset = (topBarEl?.offsetHeight || 44) + (headerEl?.offsetHeight || 72);
 
+  // Scroll ONLY the pill bar horizontally; scrolling the pill itself via
+  // scrollIntoView can also move the page and fight the user's scroll.
+  const centerPill = (pill: HTMLElement) => {
+    if (!nav) return;
+    const left = pill.offsetLeft - (nav.clientWidth - pill.offsetWidth) / 2;
+    nav.scrollTo({ left, behavior: 'smooth' });
+  };
+
+  // While a tab-triggered smooth scroll is running, the observer must not
+  // react to the sections passing by, or the highlight flickers.
+  let suppressObserver = false;
+  let suppressTimer: number | undefined;
+  window.addEventListener('scroll', () => {
+    if (!suppressObserver) return;
+    window.clearTimeout(suppressTimer);
+    suppressTimer = window.setTimeout(() => { suppressObserver = false; }, 200);
+  }, { passive: true });
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      const targetId = pill.getAttribute('data-target');
+      const section = targetId ? document.getElementById(targetId) : null;
+      if (!section) return;
+      pills.forEach(p => p.classList.toggle('active', p === pill));
+      centerPill(pill);
+      suppressObserver = true;
+      window.clearTimeout(suppressTimer);
+      suppressTimer = window.setTimeout(() => { suppressObserver = false; }, 1200);
+      const navHeight = nav?.offsetHeight || 0;
+      const top = section.getBoundingClientRect().top + window.scrollY - headerOffset - navHeight - 8;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+
   const observer = new IntersectionObserver(
     (entries) => {
+      if (suppressObserver) return;
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('data-category');
           pills.forEach(p => {
             p.classList.toggle('active', p.getAttribute('data-target') === id);
           });
-          const activePill = document.querySelector(`.category-pill[data-target="${id}"]`);
-          activePill?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          const activePill = document.querySelector<HTMLElement>(`.category-pill[data-target="${id}"]`);
+          if (activePill) centerPill(activePill);
         }
       });
     },
