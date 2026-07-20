@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </a>
         </div>
       </section>
-      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu.html' }])}
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu' }])}
 
       <nav class="category-nav" aria-label="Menu categories">
         <div class="category-nav-inner">
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <script type="application/ld+json">${generateRestaurantSchema()}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Menu', url: '/menu.html' },
+      { name: 'Menu', url: '/menu' },
     ])}</script>
   `;
 

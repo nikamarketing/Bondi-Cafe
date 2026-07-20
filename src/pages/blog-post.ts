@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const post = getPostBySlug(slug);
 
   if (!post) {
-    window.location.href = '/blog.html';
+    window.location.href = '/blog';
     return;
   }
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </section>
       ${renderBreadcrumbs([
         { name: 'Home', url: '/' },
-        { name: 'Blog', url: '/blog.html' },
+        { name: 'Blog', url: '/blog' },
         { name: post.category, url: `/${post.slug}.html` },
       ])}
 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <script type="application/ld+json">${generateRestaurantSchema()}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Blog', url: '/blog.html' },
+      { name: 'Blog', url: '/blog' },
       { name: post.title, url: `/${post.slug}.html` },
     ])}</script>
   `;

@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
               Single-origin espresso, all-day breakfast, fresh brunch plates, house-baked pastries and golden-hour desserts — steps from the sand on Campbell Parade.
             </p>
             <div class="hero-ctas">
-              <a href="/menu.html" class="btn btn-primary">Order Now</a>
-              <a href="/menu.html" class="btn btn-outline-white">View Menu</a>
+              <a href="/menu" class="btn btn-primary">Order Now</a>
+              <a href="/menu" class="btn btn-outline-white">View Menu</a>
             </div>
             <div class="hero-info-bar">
               <span class="hero-info-item">
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="section-divider" style="margin: 1rem 0;"></div>
               <p>Perched on the iconic Campbell Parade overlooking the Pacific, Aaron's Koshe brings specialty coffee and honest, seasonal food to Australia's most famous beach — from sunrise flat whites for the dawn-patrol surfers to golden-hour desserts as the yachts drift past.</p>
               <p>Our beans are single origin and ethically sourced, our sourdough arrives fresh each morning, and everything from the granola to the hollandaise is made in-house by our chefs — food that tastes like a Bondi summer feels.</p>
-              <a href="/about.html" class="btn btn-primary" style="margin-top: 1rem;">Our Story</a>
+              <a href="/about" class="btn btn-primary" style="margin-top: 1rem;">Our Story</a>
             </div>
             <div style="display: flex; flex-direction: column; gap: 1.5rem;">
               <img
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Three ways to enjoy the beach, from first light to last call</p>
           </div>
           <div class="grid-3 animate-fade-up">
-            <a href="/coffee.html" class="explore-card" style="text-decoration:none;">
+            <a href="/coffee" class="explore-card" style="text-decoration:none;">
               <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80" alt="Specialty coffee" loading="lazy" decoding="async" width="600" height="400">
               <div class="explore-card-body">
                 <h3>Specialty Coffee</h3>
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="explore-card-link">Discover Coffee →</span>
               </div>
             </a>
-            <a href="/breakfast.html" class="explore-card" style="text-decoration:none;">
+            <a href="/breakfast" class="explore-card" style="text-decoration:none;">
               <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&q=80" alt="All-day breakfast and brunch" loading="lazy" decoding="async" width="600" height="400">
               <div class="explore-card-body">
                 <h3>Breakfast &amp; Brunch</h3>
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="explore-card-link">Discover Breakfast →</span>
               </div>
             </a>
-            <a href="/drinks.html" class="explore-card" style="text-decoration:none;">
+            <a href="/drinks" class="explore-card" style="text-decoration:none;">
               <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=800&q=80" alt="Smoothies and cold drinks" loading="lazy" decoding="async" width="600" height="400">
               <div class="explore-card-body">
                 <h3>Drinks &amp; Juices</h3>
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `).join('')}
           </div>
           <div style="text-align: center; margin-top: var(--space-5);">
-            <a href="/menu.html" class="btn btn-primary">View Full Menu</a>
+            <a href="/menu" class="btn btn-primary">View Full Menu</a>
           </div>
         </div>
       </section>

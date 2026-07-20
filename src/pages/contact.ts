@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Reserve a table or contact us — we'd love to hear from you</p>
         </div>
       </section>
-      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact.html' }])}
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }])}
 
       <!-- Contact Grid -->
       <section class="section" id="reservation" aria-labelledby="contact-heading">
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Contact', url: '/contact.html' },
+      { name: 'Contact', url: '/contact' },
     ])}</script>
   `;
 

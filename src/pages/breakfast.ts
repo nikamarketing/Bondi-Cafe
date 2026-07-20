@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="margin-top: 1rem;">Reserve a Table</a>
         </div>
       </section>
-      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu.html' }, { name: 'Breakfast & Brunch', url: '/breakfast.html' }])}
+      ${renderBreadcrumbs([{ name: 'Home', url: '/' }, { name: 'Menu', url: '/menu' }, { name: 'Breakfast & Brunch', url: '/breakfast' }])}
 
       <!-- SEO intro -->
       <section class="section" aria-labelledby="bf-intro-heading">
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="section-divider" style="margin: 1rem 0;"></div>
               <p>Breakfast is Bondi's true religion, and Aaron's Koshe is its earliest church — doors open at 5 AM for the swimmers and surfers, and the full breakfast menu runs all the way to 3 PM for everyone who slept in.</p>
               <p>Everything is built on proper ingredients: free-range eggs poached to order, sourdough from a local bakery, house-cured salmon, Persian feta and seasonal fruit. From a quick avo toast to the full Big Bondi Breakfast, it's honest food with a sea view.</p>
-              <a href="/menu.html" class="btn btn-primary" style="margin-top: 1rem;">View Full Menu</a>
+              <a href="/menu" class="btn btn-primary" style="margin-top: 1rem;">View Full Menu</a>
             </div>
             <div style="min-height: 22rem; border-radius: var(--radius-md); overflow: hidden;">
               <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=1200&q=80" alt="Big Bondi Breakfast at Aaron's Koshe" loading="lazy" decoding="async" width="800" height="600" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
@@ -144,15 +144,15 @@ document.addEventListener('DOMContentLoaded', () => {
     </main>
     ${renderFooter()}
 
-    <script type="application/ld+json">${generateCategoryPageSchema({ name: 'All-Day Breakfast & Brunch in Bondi Beach', description: 'All-day breakfast and fresh brunch plates at Aaron\'s Koshe, 94 Campbell Parade, Bondi Beach — served daily 5 AM to 3 PM.', path: '/breakfast.html' })}</script>
+    <script type="application/ld+json">${generateCategoryPageSchema({ name: 'All-Day Breakfast & Brunch in Bondi Beach', description: 'All-day breakfast and fresh brunch plates at Aaron\'s Koshe, 94 Campbell Parade, Bondi Beach — served daily 5 AM to 3 PM.', path: '/breakfast' })}</script>
     <script type="application/ld+json">${generateMenuSectionSchema('breakfast')}</script>
     <script type="application/ld+json">${generateMenuSectionSchema('brunch')}</script>
     <script type="application/ld+json">${generateRestaurantSchema()}</script>
     <script type="application/ld+json">${generateFAQSchema(faqs)}</script>
     <script type="application/ld+json">${generateBreadcrumbSchema([
       { name: 'Home', url: '/' },
-      { name: 'Menu', url: '/menu.html' },
-      { name: 'Breakfast & Brunch', url: '/breakfast.html' },
+      { name: 'Menu', url: '/menu' },
+      { name: 'Breakfast & Brunch', url: '/breakfast' },
     ])}</script>
   `;
 

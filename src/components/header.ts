@@ -33,7 +33,7 @@ export function initHeader(): void {
     const href = link.getAttribute('href') || '';
     if (
       (currentPath === '/' && href === '/') ||
-      (currentPath === '/index.html' && href === '/') ||
+      (currentPath === '/' && href === '/') ||
       (href !== '/' && !href.startsWith('http') && currentPath.includes(href))
     ) {
       link.classList.add('active');
@@ -41,16 +41,16 @@ export function initHeader(): void {
   });
 
   // Keep the "Menu" link highlighted on the menu and its sub-pages
-  const menuPages = ['/menu.html', '/coffee.html', '/breakfast.html', '/drinks.html'];
+  const menuPages = ['/menu', '/coffee', '/breakfast', '/drinks'];
   if (menuPages.some(p => currentPath.includes(p))) {
-    document.querySelector('.nav-links a[href="/menu.html"]')?.classList.add('active');
+    document.querySelector('.nav-links a[href="/menu"]')?.classList.add('active');
   }
 
   document.querySelectorAll('.mobile-nav-item').forEach(item => {
     const href = item.getAttribute('href') || '';
     if (
       (currentPath === '/' && href === '/') ||
-      (currentPath === '/index.html' && href === '/') ||
+      (currentPath === '/' && href === '/') ||
       (href !== '/' && !href.startsWith('tel:') && !href.startsWith('http') && currentPath.includes(href))
     ) {
       item.classList.add('active');
@@ -146,11 +146,11 @@ export function renderHeader(): string {
 
       <nav class="nav-links" role="navigation" aria-label="Main navigation">
         <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/menu.html">Menu</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/about">About</a>
+        <a href="/menu">Menu</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
         <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="nav-reserve">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           Reserve
