@@ -46,7 +46,7 @@ export function renderFooter(): string {
           <a href="/menu.html">Full Menu</a>
           <a href="/coffee.html">Specialty Coffee</a>
           <a href="/breakfast.html">Breakfast &amp; Brunch</a>
-          <a href="/drinks.html">Drinks &amp; Cocktails</a>
+          <a href="/drinks.html">Drinks &amp; Juices</a>
           <a href="/gallery.html">Gallery</a>
           <a href="/blog.html">Blog</a>
           <a href="/contact.html">Contact</a>

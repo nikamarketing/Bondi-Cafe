@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <h1>Our Menu</h1>
-          <p>Specialty coffee, all-day breakfast, brunch, smoothies, pastries &amp; cocktails</p>
+          <p>Specialty coffee, all-day breakfast, brunch, smoothies, pastries &amp; desserts</p>
           <a href="${config.reservationUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="margin-top: 1rem;">
             Reserve a Table
           </a>

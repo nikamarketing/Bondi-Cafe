@@ -12,8 +12,8 @@ export const SITE_CONFIG = {
     fullName: "Aaron's Koshe Cafe & Restaurant",
     tagline: "Cafe & Restaurant on Bondi Beach",
     description:
-      "Aaron's Koshe is Bondi Beach's home of specialty coffee and all-day dining. Single-origin espresso, all-day breakfast, fresh brunch plates, house-baked pastries and evening cocktails, served steps from the sand on Campbell Parade.",
-    cuisine: ["Cafe", "Breakfast", "Brunch", "Coffee", "Cocktail Bar"],
+      "Aaron's Koshe is Bondi Beach's home of specialty coffee and all-day dining. Single-origin espresso, all-day breakfast, fresh brunch plates, house-baked pastries and fresh juices, served steps from the sand on Campbell Parade.",
+    cuisine: ["Cafe", "Breakfast", "Brunch", "Coffee", "Desserts"],
     priceRange: "$$",
     logoPath: "/assets/images/logo.svg",
     faviconPath: "/assets/images/favicon-32.png",
@@ -44,7 +44,7 @@ export const SITE_CONFIG = {
         open: "05:00",
         close: "23:00",
         days: "Mon–Sun",
-        display: "Open daily 5:00 AM – 11:00 PM · Kitchen until 3:00 PM · Bar from 5:00 PM",
+        display: "Open daily 5:00 AM – 11:00 PM · Kitchen until 3:00 PM",
       },
       googleMapsUrl: "https://maps.google.com/?q=94+Campbell+Parade+Bondi+Beach+NSW+2026",
       googleRating: 4.8,
@@ -84,7 +84,7 @@ export const SITE_CONFIG = {
     defaultTitle: "Aaron's Koshe — Cafe & Restaurant in Bondi Beach",
     titleTemplate: "%s | Aaron's Koshe — Bondi Beach",
     defaultDescription:
-      "Aaron's Koshe — specialty coffee, all-day breakfast, brunch and evening cocktails on Bondi Beach. House-baked pastries, fresh seasonal plates and single-origin espresso on Campbell Parade. Open daily 5AM–11PM.",
+      "Aaron's Koshe — specialty coffee, all-day breakfast, brunch and house-made desserts on Bondi Beach. House-baked pastries, fresh seasonal plates and single-origin espresso on Campbell Parade. Open daily 5AM–11PM.",
     keywords: [
       "cafe Bondi Beach",
       "breakfast Bondi Beach",
@@ -94,7 +94,7 @@ export const SITE_CONFIG = {
       "best cafe Bondi Beach",
       "Aaron's Koshe",
       "Campbell Parade cafe",
-      "cocktail bar Bondi Beach",
+      "dessert cafe Bondi Beach",
     ],
     ogImage: "/assets/images/og-image.png",
     locale: "en_AU",

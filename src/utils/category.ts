@@ -1,6 +1,6 @@
 // ============================================================
 // category.ts — shared helpers for SEO category landing pages
-// (Specialty Coffee, Breakfast & Brunch, Drinks & Cocktails)
+// (Specialty Coffee, Breakfast & Brunch, Drinks & Juices)
 // and the full menu.
 // ============================================================
 import { MENU_CATEGORIES } from './menu';
@@ -42,12 +42,6 @@ export const ITEM_IMAGE_MAP: Record<string, string> = {
   'chocolate brownie': 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80',
   'acai cheesecake': 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800&q=80',
   'carrot & walnut cake': 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=800&q=80',
-  // Cocktails & bar
-  'espresso martini': 'https://images.unsplash.com/photo-1614963326505-843868f5f2c1?w=800&q=80',
-  'aperol spritz': 'https://images.unsplash.com/photo-1560512823-829485b8bf24?w=800&q=80',
-  'bondi beach cocktail': 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80',
-  'virgin mojito': 'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=800&q=80',
-  'glass of wine': 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80',
 };
 
 export function getItemImage(name: string): string | null {

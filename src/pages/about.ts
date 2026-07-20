@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="section-divider" style="margin: 1rem 0;"></div>
               <p>Aaron's Koshe was born from a simple morning ritual: a swim at sunrise, then the search for a genuinely great coffee. When we couldn't find one open early enough, we decided to build it ourselves — a cafe and restaurant on Campbell Parade that pours its first flat white at 5 AM, while the surfers are still waxing their boards.</p>
               <p>The espresso machine is the beating heart of the room. Our single-origin beans are ethically sourced and roasted for us in small batches, and every barista on the team cups, dials and tastes daily so the first pour of the morning is as good as the hundredth.</p>
-              <p>The kitchen keeps pace from dawn to mid-afternoon — free-range eggs, local sourdough, house-cured salmon and seasonal produce — and when the sun starts to drop, the bar takes over with espresso martinis, spritzes and cocktails until 11 PM. One room, one view, a whole Bondi day.</p>
+              <p>The kitchen keeps pace from dawn to mid-afternoon — free-range eggs, local sourdough, house-cured salmon and seasonal produce — and as the sun starts to drop, the counter turns to house-made desserts, milkshakes and iced coffee until 11 PM. One room, one view, a whole Bondi day.</p>
             </div>
             <div style="min-height: 24rem; border-radius: var(--radius-md); overflow: hidden;">
               <img

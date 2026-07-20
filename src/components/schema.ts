@@ -168,7 +168,7 @@ export function generateReviewSchema(): string {
       rating: 5,
     },
     {
-      body: "Came for brunch, stayed for espresso martinis at sunset. Beautiful room, warm service and everything we ate was spot on.",
+      body: "Came for brunch, stayed for iced lattes at sunset. Beautiful room, warm service and everything we ate was spot on.",
       source: "Google Review",
       rating: 5,
     },
@@ -203,7 +203,7 @@ export function generateImageGallerySchema(): string {
     '@type': 'ImageGallery',
     name: `${config.brand.name} Photo Gallery`,
     url: `${config.seo.siteUrl}/gallery.html`,
-    description: `Photos of our specialty coffee, all-day breakfast, brunch plates, pastries, cocktails and beachside cafe at ${config.brand.name} in Bondi Beach, Sydney.`,
+    description: `Photos of our specialty coffee, all-day breakfast, brunch plates, pastries, desserts and beachside cafe at ${config.brand.name} in Bondi Beach, Sydney.`,
     about: {
       '@type': 'Restaurant',
       name: config.brand.fullName,

@@ -97,7 +97,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'A Local’s Guide to Cafe Culture in Bondi Beach',
     metaTitle: 'Cafe Culture in Bondi Beach — A Local’s Guide | Aaron’s Koshe Blog',
     description:
-      'When to go, what to order and how to spend a whole Bondi day in one cafe — from sunrise flat whites to golden-hour espresso martinis at Aaron’s Koshe on Campbell Parade.',
+      'When to go, what to order and how to spend a whole Bondi day in one cafe — from sunrise flat whites to golden-hour milkshakes at Aaron’s Koshe on Campbell Parade.',
     datePublished: '2026-07-18',
     readTime: '5 min read',
     category: 'Bondi Beach',
@@ -116,13 +116,13 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Afternoon: the long lunch drift</h2>
       <p>As the kitchen winds toward its 3 PM close, lunch stretches out — fish tacos and kombucha, a barramundi bowl, maybe a slice of acai cheesecake because the ocean air demands it. This is the hour for watching the sails drift across the horizon and deciding the emails can wait.</p>
 
-      <h2>Golden hour: when the cafe becomes a bar</h2>
-      <p>At 5 PM the switch flips. The grinders quiet down, the shaker comes out, and the same single-origin espresso that made your morning flat white goes into an <a href="/drinks.html">Espresso Martini</a>. The east-facing beach means the light turns pink and gold behind Campbell Parade — order a spritz, share some pastries left from the morning bake, and stay until the streetlights take over. Last call is 11 PM.</p>
+      <h2>Golden hour: the sweetest shift</h2>
+      <p>As the afternoon fades, the same single-origin espresso that made your morning flat white goes into an <a href="/drinks.html">iced latte</a>, and the blender switches to milkshakes and thickshakes. The east-facing beach means the light turns pink and gold behind Campbell Parade — order a dessert, share some pastries left from the morning bake, and stay until the streetlights take over. We pour until 11 PM.</p>
 
       <h2>Make it yours</h2>
       <ul>
         <li><strong>Best seat:</strong> the window bench at sunrise; the corner table at golden hour.</li>
-        <li><strong>Best order:</strong> flat white before 10, cold brew after, Bondi Beach Cocktail after 5.</li>
+        <li><strong>Best order:</strong> flat white before 10, cold brew after, a thickshake after 5.</li>
         <li><strong>Best day:</strong> any day — we're open 5 AM to 11 PM, every single one.</li>
       </ul>
       <p>Aaron's Koshe is at 94 Campbell Parade, directly opposite the beach. <a href="/contact.html">Book a table</a> or just follow the smell of coffee. See you by the water.</p>

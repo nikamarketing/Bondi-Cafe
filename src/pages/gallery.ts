@@ -39,8 +39,8 @@ const galleryItems = [
     label: 'Our baristas at the brew bar',
   },
   {
-    src: 'https://images.unsplash.com/photo-1614963326505-843868f5f2c1?w=800&q=80',
-    label: 'Espresso martini at golden hour',
+    src: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=800&q=80',
+    label: 'Freshly squeezed juice at golden hour',
   },
 ];
 

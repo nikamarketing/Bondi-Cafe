@@ -174,7 +174,7 @@ export function renderHeader(): string {
             <a href="/menu.html" role="menuitem">Full Menu</a>
             <a href="/coffee.html" role="menuitem">Specialty Coffee</a>
             <a href="/breakfast.html" role="menuitem">Breakfast &amp; Brunch</a>
-            <a href="/drinks.html" role="menuitem">Drinks &amp; Cocktails</a>
+            <a href="/drinks.html" role="menuitem">Drinks &amp; Juices</a>
           </div>
         </div>
         <a href="/gallery.html">Gallery</a>

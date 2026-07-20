@@ -45,10 +45,10 @@ const featuredDishes = [
     img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
   },
   {
-    name: 'Espresso Martini',
-    category: 'Cocktails & Bar',
-    price: 22,
-    img: 'https://images.unsplash.com/photo-1614963326505-843868f5f2c1?w=800&q=80',
+    name: 'Fresh Orange Juice',
+    category: 'Juices & Smoothies',
+    price: 10,
+    img: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=800&q=80',
   },
 ];
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
               on <span class="hero-highlight">Bondi</span> Beach
             </h1>
             <p class="hero-split-desc">
-              Single-origin espresso, all-day breakfast, fresh brunch plates, house-baked pastries and sunset cocktails — steps from the sand on Campbell Parade.
+              Single-origin espresso, all-day breakfast, fresh brunch plates, house-baked pastries and golden-hour desserts — steps from the sand on Campbell Parade.
             </p>
             <div class="hero-ctas">
               <a href="/menu.html" class="btn btn-primary">Order Now</a>
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div>
               <h2 id="about-heading" style="color: var(--color-primary); margin-bottom: 1rem;">Bondi Beach's Home of Coffee &amp; All-Day Dining</h2>
               <div class="section-divider" style="margin: 1rem 0;"></div>
-              <p>Perched on the iconic Campbell Parade overlooking the Pacific, Aaron's Koshe brings specialty coffee and honest, seasonal food to Australia's most famous beach — from sunrise flat whites for the dawn-patrol surfers to golden-hour cocktails as the yachts drift past.</p>
+              <p>Perched on the iconic Campbell Parade overlooking the Pacific, Aaron's Koshe brings specialty coffee and honest, seasonal food to Australia's most famous beach — from sunrise flat whites for the dawn-patrol surfers to golden-hour desserts as the yachts drift past.</p>
               <p>Our beans are single origin and ethically sourced, our sourdough arrives fresh each morning, and everything from the granola to the hollandaise is made in-house by our chefs — food that tastes like a Bondi summer feels.</p>
               <a href="/about.html" class="btn btn-primary" style="margin-top: 1rem;">Our Story</a>
             </div>
@@ -186,10 +186,10 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
             </a>
             <a href="/drinks.html" class="explore-card" style="text-decoration:none;">
-              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80" alt="Cocktails and cold drinks" loading="lazy" decoding="async" width="600" height="400">
+              <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=800&q=80" alt="Smoothies and cold drinks" loading="lazy" decoding="async" width="600" height="400">
               <div class="explore-card-body">
-                <h3>Drinks &amp; Cocktails</h3>
-                <p>Fresh smoothies and juices by day, espresso martinis and spritzes from 5 PM.</p>
+                <h3>Drinks &amp; Juices</h3>
+                <p>Fresh smoothies, juices, iced coffee and milkshakes, all day long.</p>
                 <span class="explore-card-link">Discover Drinks →</span>
               </div>
             </a>
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <section class="cta-banner" aria-label="Reserve a Table">
         <div class="container animate-fade-up" style="text-align:center;">
           <h2>Reserve Your Table at Aaron's Koshe</h2>
-          <p>Join us for breakfast by the beach or cocktails at golden hour, overlooking beautiful Bondi. Book online in seconds via Quandoo.</p>
+          <p>Join us for breakfast by the beach or desserts at golden hour, overlooking beautiful Bondi. Book online in seconds via Quandoo.</p>
           <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;">
             <span style="display:inline-flex;align-items:center;gap:0.375rem;background:rgba(255,255,255,0.15);padding:0.4rem 1rem;border-radius:2rem;font-size:0.875rem;font-weight:600;">
               ${ICONS.clock} Open Daily: 5 AM – 11 PM
@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </svg>
               </div>
               <h3>Beachside Atmosphere</h3>
-              <p>Dine just steps from Australia's most iconic beach — sea breeze at breakfast, sails on the horizon at lunch and sunset colours with your cocktail.</p>
+              <p>Dine just steps from Australia's most iconic beach — sea breeze at breakfast, sails on the horizon at lunch and sunset colours with your milkshake.</p>
             </div>
           </div>
         </div>
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="review-card">
               <div class="review-stars" aria-label="5 stars">★★★★★</div>
-              <p>"Came for brunch, stayed for espresso martinis at sunset. Beautiful room, warm service and everything we ate was spot on."</p>
+              <p>"Came for brunch, stayed for iced lattes at sunset. Beautiful room, warm service and everything we ate was spot on."</p>
               <div class="review-author">— Google Review</div>
             </div>
           </div>
