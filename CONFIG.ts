@@ -71,8 +71,8 @@ export const SITE_CONFIG = {
 
   // ── TRACKING & ANALYTICS ───────────────────────────────────
   tracking: {
-    googleTagManagerId: "GTM-XXXXXXXX",
-    googleAnalyticsId: "G-XXXXXXXXXX",
+    googleTagManagerId: "GTM-KJH6GCFN",
+    googleAnalyticsId: "G-S42NCH97PC",
     metaPixelId: "XXXXXXXXXXXXXXXX",
     googleSiteVerification: "",
   },
